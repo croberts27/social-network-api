@@ -39,11 +39,11 @@ const handleError = (err) => console.log(err);
 
 // Create new instance of the model
 
-Thought.create({
-  thoughtText: "This is my first thought!",
-  username: "jman777",
-})
-  .then((result) => console.log("Thought has been posted!", result))
-  .catch((err) => handleError(err));
+// Thought.create({
+//   thoughtText: "This is my first thought!",
+//   username: "jman777",
+// })
+//   .then((result) => console.log("Thought has been posted!", result))
+//   .catch((err) => handleError(err));
 
 module.exports = Thought;

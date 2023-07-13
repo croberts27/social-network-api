@@ -1,5 +1,6 @@
 const express = require("express");
 const db = require("./config/connection.js");
+const routes = require("./routes/index.js");
 // Require model
 const { User, Thought, Reaction } = require("./models");
 

@@ -38,11 +38,11 @@ const handleError = (err) => console.error(err);
 
 // Create a new instance of the model, a document
 
-User.create({
-  username: "jman777",
-  email: "jman4ever@gmail.com",
-})
-  .then((result) => console.log("Created new user", result))
-  .catch((err) => handleError(err));
+// User.create({
+//   username: "jman777",
+//   email: "jman4ever@gmail.com",
+// })
+//   .then((result) => console.log("Created new user", result))
+//   .catch((err) => handleError(err));
 
 module.exports = User;
