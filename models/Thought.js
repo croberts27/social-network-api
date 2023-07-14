@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+const { model, Schema } = require("mongoose");
 
-const thoughtSchema = new mongoose.Schema({
+const thoughtSchema = new Schema({
   thoughtText: {
     type: String,
     required: true,
@@ -27,13 +27,14 @@ const thoughtSchema = new mongoose.Schema({
   reactions: [{ type: mongoose.Schema.Types.ObjectId, ref: "Reaction" }],
 });
 
+// create model
+const Thought = model("Thought", thoughtSchema);
+
 // virtual property called 'reactionCount' that retrieves the length of the thought's 'reactions' array field on query
 
 thoughtSchema.virtual("reactionCount").get(function () {
   return this.reactions.length;
 });
-
-const Thought = mongoose.model("Thought", thoughtSchema);
 
 const handleError = (err) => console.log(err);
 
