@@ -1,4 +1,6 @@
-const { model, Schema } = require("mongoose");
+// require mongoose and moment
+const { model, Schema, Types } = require("mongoose");
+const moment = require("moment");
 
 const thoughtSchema = new Schema({
   thoughtText: {
