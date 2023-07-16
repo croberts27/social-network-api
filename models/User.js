@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
-
+// Require Mongoose
+const { Schema, model } = require("mongoose");
 // Construct a new instance of the schema class
-const userSchema = new mongoose.Schema(
+const usersSchema = new Schema(
   {
     // Configure individual properties using Schema Types
     username: { type: String, required: true, unique: true, trim: true },
@@ -16,8 +16,8 @@ const userSchema = new mongoose.Schema(
         message: (props) => `${props.value} is not a valid email address!`,
       },
     },
-    thoughts: [{ type: mongoose.Schema.Types.ObjectId, ref: "Thought" }],
-    friends: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    thoughts: [{ type: mongoose.Schema.Types.ObjectId, ref: "Thoughts" }],
+    friends: [{ type: mongoose.Schema.Types.ObjectId, ref: "Users" }],
   },
   {
     toJSON: {
@@ -28,13 +28,13 @@ const userSchema = new mongoose.Schema(
 );
 
 // Define a virtual property 'friendCount' using the 'get' method
-userSchema.virtual("friendCount").get(function () {
+usersSchema.virtual("friendCount").get(function () {
   return this.friends.length;
 });
 
-const User = mongoose.model("User", userSchema);
+const Users = model("Users", usersSchema);
 
-const handleError = (err) => console.error(err);
+// const handleError = (err) => console.error(err);
 
 // Create a new instance of the model, a document
 
