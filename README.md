@@ -1,7 +1,7 @@
 # Social Network API
 
 ## Description
-
+The purpose of this project is to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
 ## Table of Contents
 
 - [Installation](#installation)
@@ -17,10 +17,12 @@
 
 ## Screenshot
 
+![Insomnia](/assets/proof.PNG)
+
 ## Credits
 
 - Columbia Coding Bootcamp
-- MDN Docs
+- Mongoose Docs
 - Stackoverflow
 - Bouncless
 
