@@ -5,7 +5,7 @@
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- [Screenshot](#screenshot)
 - [Credits](#credits)
 - [License](#license)
 
@@ -13,8 +13,9 @@
 
 - [Mongoose](https://www.npmjs.com/package/mongoose)
 - [Express](https://www.npmjs.com/package/express)
+- [Moment](https://www.npmjs.com/package/moment)
 
-## Usage
+## Screenshot
 
 ## Credits
 

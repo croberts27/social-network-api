@@ -16,8 +16,8 @@ const usersSchema = new Schema(
         message: (props) => `${props.value} is not a valid email address!`,
       },
     },
-    thoughts: [{ type: mongoose.Schema.Types.ObjectId, ref: "Thoughts" }],
-    friends: [{ type: mongoose.Schema.Types.ObjectId, ref: "Users" }],
+    thoughts: [{ type: Schema.Types.ObjectId, ref: "Thoughts" }],
+    friends: [{ type: Schema.Types.ObjectId, ref: "Users" }],
   },
   {
     toJSON: {
@@ -45,4 +45,4 @@ const Users = model("Users", usersSchema);
 //   .then((result) => console.log("Created new user", result))
 //   .catch((err) => handleError(err));
 
-module.exports = User;
+module.exports = Users;
