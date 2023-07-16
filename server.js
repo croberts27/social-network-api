@@ -17,6 +17,6 @@ db.on("error", (error) => {
 
 db.once("open", () => {
   app.listen(PORT, () => {
-    console.log(`Social Network API  is running on port ${PORT}!`);
+    console.log(`Social Network API is running on port ${PORT}!`);
   });
 });
