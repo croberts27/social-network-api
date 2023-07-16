@@ -1,6 +1,6 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 // Wrap Mongoose around local connection to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/socialNetworkAPI');
+mongoose.connect("mongodb://127.0.0.1:27017/social-network-api");
 
-// Export connection 
+// Export connection
 module.exports = mongoose.connection;
