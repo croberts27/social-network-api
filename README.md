@@ -8,6 +8,7 @@ The purpose of this project is to build an API for a social network web applicat
 - [Screenshot](#screenshot)
 - [Credits](#credits)
 - [License](#license)
+- [Recording](#recording)
 
 ## Installation
 
@@ -29,3 +30,8 @@ The purpose of this project is to build an API for a social network web applicat
 ## License
 
 MIT License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) (https://opensource.org/licenses/MIT)
+
+
+## Recording
+
+[https://drive.google.com/file/d/1q1XK-4_Ss3H5H_s1XFajwsaM_t6QQL2y/view](https://drive.google.com/file/d/1q1XK-4_Ss3H5H_s1XFajwsaM_t6QQL2y/view)
